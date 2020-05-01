@@ -7,13 +7,14 @@
     tools:context=".MainActivity">
 
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5" />
-    <android.support.constraint.Guideline
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/v"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +24,9 @@
     <com.example.myapplication.BikeOfferLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/horizontal"
-        app:layout_constraintStart_toStartOf="@+id/v" />
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/horizontal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
